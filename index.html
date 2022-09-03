@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INFLUXED | Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/flux logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="src/styles/styles.css" />
+    <link rel="stylesheet" href="src/styles/navigation.css" />
+    <link rel="stylesheet" href="src/styles/hero.css" />
+    <link rel="stylesheet" href="src/styles/skills.css" />
+    <link rel="stylesheet" href="src/styles/projects.css" />
+    <link rel="stylesheet" href="src/styles/footer.css" />
+    <link rel="stylesheet" href="src/styles/modal.css" />
+    <script defer type="module" src="src/js/controller.js"></script>
+  </head>
+  <body>
+    <div>
+      <div class="backdrop"></div>
+      <header class="full-nav header">
+        <a href="#">
+          <img src="assets/influxed.png" alt="logo" class="nav__logo" />
+        </a>
+        <div id="side-menu-toggle">
+        <a href="#"><span><svg xmlns="http://www.w3.org/2000/svg" width="32"
+          height="32"
+          viewBox="0 0 16 16"
+          style="fill: #000000" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+        </svg>
+        </span></a>
+      </div>
+        <nav class="navigation">
+          <ul class="nav__links">
+            <li class="nav__item">
+              <a href="#" class="nav__link underline"><span>Home</span></a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link underline"
+                ><span>Skills</span></a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link underline"
+                ><span>Projects</span></a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link underline"
+                ><span>About</span></a
+              >
+            </li>
+          </ul>
+          <a href="" class="nav__link contact btn--show-modal"
+            ><span>Contact</span></a
+          >
+          <ul class="nav__socials">
+            <li class="nav__item-social">
+              <a
+                class="github"
+                href="https://github.com/influxion/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><span>
+                  <svg
+                    class="nav__svg-social"
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 16 16"
+                    style="fill: #000000"
+                  >
+                    <path
+                      d="M 7.5 1 C 3.910156 1 1 3.90625 1 7.488281 C 1 10.355469 2.863281 12.789063 5.445313 13.648438 C 5.769531 13.707031 6 13.375 6 13.125 C 6 12.972656 6.003906 12.789063 6 12.25 C 4.191986 12.698625 3.625 11.375 3.625 11.375 C 3.328125 10.625 2.96875 10.410156 2.96875 10.410156 C 2.378906 10.007813 3.011719 10.019531 3.011719 10.019531 C 3.669863 10.0625 4 10.625 4 10.625 C 4.5 11.5 5.628906 11.419863 6 11.25 C 6 10.851563 6.042969 10.5625 6.152344 10.378906 C 4.109375 10.019531 2.996094 8.839844 3 7.207031 C 3.003906 6.242188 3.335938 5.492188 3.875 4.9375 C 3.698625 4.698625 3.480469 3.625 3.960938 3 C 5.167969 3 5.886719 3.871094 5.886719 3.871094 C 5.886719 3.871094 6.453125 3.625 7.496094 3.625 C 8.542969 3.625 9.105469 3.859375 9.105469 3.859375 C 9.105469 3.859375 9.828125 3 11.035156 3 C 11.515625 3.625 11.355469 4.698625 11.167969 4.917969 C 11.683594 5.460938 12 6.210938 12 7.207031 C 12 8.839844 10.890625 10.019531 8.851563 10.375 C 8.980469 10.570313 9 10.84375 9 11.25 C 9 12.117188 9 12.910156 9 13.125 C 9 13.375 9.226563 13.710938 9.558594 13.648438 C 12.198625 12.785156 14 10.355469 14 7.488281 C 14 3.90625 11.089844 1 7.5 1 Z"
+                    ></path>
+                  </svg>
+                </span>
+              </a>
+            </li>
+            <li class="nav__item-social">
+              <a
+                class="linkedin"
+                href="https://www.linkedin.com/in/jordon-nichols/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><span>
+                  <svg
+                    class="nav__svg-social"
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 16 16"
+                    style="fill: #000000"
+                  >
+                    <path
+                      d="M 2.757813 1 C 1.792969 1 1 1.792969 1 2.757813 L 1 12.246094 C 1 13.207031 1.792969 14 2.757813 14 L 12.246094 14 C 13.207031 14 14 13.207031 14 12.246094 L 14 2.757813 C 14 1.792969 13.207031 1 12.246094 1 Z M 2.757813 2 L 12.246094 2 C 12.667969 2 13 2.332031 13 2.757813 L 13 12.246094 C 13 12.667969 12.667969 13 12.246094 13 L 2.757813 13 C 2.332031 13 2 12.667969 2 12.246094 L 2 2.757813 C 2 2.332031 2.332031 2 2.757813 2 Z M 4 3 C 3.449219 3 3 3.449219 3 4 C 3 4.550781 3.449219 5 4 5 C 4.550781 5 5 4.550781 5 4 C 5 3.449219 4.550781 3 4 3 Z M 3 6 L 3 12 L 5 12 L 5 6 Z M 6 6 L 6 12 L 8 12 L 8 9.320313 C 8 8.488281 8.078125 7.742188 9.078125 7.742188 C 10.0625 7.742188 10 8.698719 10 9.375 L 10 12 L 12 12 L 12 9.039063 C 12 7.320313 11.698625 6 9.691986 6 C 8.753906 6 8.28125 6.375 8.023438 6.875 L 8 6.875 L 8 6 Z"
+                    ></path>
+                  </svg>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <nav class="mobile-nav">
+          <ul class="mobile-nav__item-list">
+            <li class="mobile-nav__item">
+                <a href="#" class="nav__link underline"><span>Home</span></a>
+            </li>
+            <li class="mobile-nav__item">
+              <a href="#skills" class="underline"
+                ><span>Skills</span></a
+              >
+            </li>
+            <li class="mobile-nav__item">
+              <a href="#projects" class="underline"
+                ><span>Projects</span></a
+              >
+            </li>
+            <li class="mobile-nav__item">
+              <a href="#about" class="underline"
+                ><span>About</span></a
+              >
+            </li>
+            <li class="mobile-nav__item">
+              <a href="" class="contact btn--show-modal"
+            ><span>Contact</span></a
+          >
+            </li>
+          </ul>
+        </nav>
+
+
+      </header>
+      <main>
+        <section class="section-hero">
+          <div class="hero">
+            <div class="heading-text">
+              <p class="heading-intro">Hi, my name is</p>
+              <div class="heading">
+                <h1 class="heading-name">Jordon Nichols</h1>
+                <h2 class="heading-title">I'm a full stack developer.</h2>
+              </div>
+              <p class="heading-description">
+                Working on building secure web applications day in, day out.
+              </p>
+              <a href="" class="contact btn--show-modal hero-btn"
+                ><span>Contact</span></a
+              >
+              <a href="#skills" class="hero-btn hero-tech-btn"
+                ><span>My Tech Stack</span></a
+              >
+            </div>
+            <div class="heading-img"></div>
+          </div>
+        </section>
+        <section class="section-skills" id="skills">
+          <div class="skills">
+            <div class="skills-title-div">
+              <h2 class="skills-description">Skills</h2>
+              <h3 class="skills-title">Check out what I'm working with!</h3>
+            </div>
+            <div class="skills-rock-content">
+              <div class="skills-rock-container">
+                <img
+                  class="rock-stack"
+                  src="assets/rock-stack.v2.png"
+                  alt="rock stack"
+                />
+                <div class="skills-overlay">
+                  <div
+                    class="top-overlay overlays"
+                    data-src="assets/rock-stack-top-blue.v2.png"
+                    data-layer="top"
+                  ></div>
+                  <div
+                    class="middle-overlay overlays"
+                    data-src="assets/rock-stack-middle-green.v2.png"
+                    data-layer="middle"
+                  ></div>
+                  <div
+                    class="bottom-overlay overlays"
+                    data-src="assets/rock-stack-bottom-red.v2.png"
+                    data-layer="bottom"
+                  ></div>
+                </div>
+              </div>
+              <div class="skills-content-container">
+                <div class="skills-content title">
+                  <h2>Hover or click on one of the rocks to reveal my tech stack...</h2>
+                </div>
+                <div class="skills-content top hidden">
+                <h2>Front-end</h2>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg" width="98" height="98" alt="JavaScript" /></a>
+                <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg" width="98" height="98" alt="TypeScript" /></a>
+                <a href="https://reactjs.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="98" height="98"/></a>
+                <a href="https://angular.io" target="_blank" rel="noreferrer"><img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="Angular" width="98" height="98"/>
+                <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg" width="98" height="98" alt="HTML5" /></a>
+                <a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg" width="98" height="98" alt="CSS3" /></a>
+                <a href="https://sass-lang.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/sass-colored.svg" width="98" height="98" alt="Sass" /></a>
+                <a href="https://www.gatsbyjs.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/gatsbyjs/gatsbyjs-icon.svg" alt="gatsby" width="98" height="98"/> </a>
+                <a href="https://nextjs.org/" class="next" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg" alt="nextjs" width="98" height="98"/> </a>
+                <a href="https://redux.js.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="redux" width="98" height="98"/> </a>
+              </div>
+              <div class="skills-content middle hidden">
+                <h2>Tools</h2>
+                <a href="https://www.heroku.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/heroku-colored.svg" width="98" height="98" alt="Heroku" /></a>
+                <a href="https://webpack.js.org" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/d00d0969292a6569d45b06d3f350f463a0107b0d/icons/webpack/webpack-original-wordmark.svg" alt="Webpack" width="98" height="98"/></a>
+                <a href="https://babeljs.io/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/babel-colored.svg" width="98" height="98" alt="Babel" /></a>
+                <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="98" height="98"/> </a>
+                <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="98" height="98"/> </a>
+                <a href="https://jestjs.io" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg" alt="jest" width="98" height="98"/> </a>
+                <a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="98" height="98"/> </a>
+              </div>
+              <div class="skills-content bottom hidden">
+                <h2>Back-end</h2>
+                <a href="https://nodejs.org/en/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg" width="98" height="98" alt="NodeJS" /></a>
+                <a href="https://expressjs.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/express-colored.svg" width="98" height="98" alt="Express" /></a>
+                <a href="https://graphql.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/graphql-colored.svg" width="98" height="98" alt="GraphQL" /></a>
+                <a href="https://firebase.google.com/" target="_blank" rel="noreferrer"><img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="98" height="98"/></a>
+                <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mongodb-colored.svg" width="98" height="98" alt="MongoDB" /></a>
+                <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mysql-colored.svg" width="98" height="98" alt="MySQL" /></a>
+
+              </div>
+            </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-projects" id="projects">
+          <div class="projects-intro">
+            <p>Projects</p>
+            <h2>Some of the things I've been working on lately...</h2>
+          </div>
+          <div class="projects">
+            <figure class="project">
+              <img src="assets/project-image0.png" alt="Project Image" class="project-image">
+              <div class="project-details">
+                <h3 class="project-title bold">Forkify | Recipe Application</h3>
+                <p  class="project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore suscipit harum quod quibusdam itaque ab, culpa magnam non alias quisquam? At vero totam nemo vel deserunt illo a fuga deleniti?</p>
+                <div class="project-stack">
+                  <i class="uil uil-react"></i>
+                  <i class="uil uil-html5-alt"></i>
+                  <i class="uil uil-html3-alt"></i>
+                  <i class="uil uil-java-script"></i>
+                </div>
+                <div class="project-btns">
+                  <a href="" rel="noopener noreferrer" class="project-btn"><span><i class="uil-btn uil uil-eye"></i></span></a>
+                  <a href="" rel="noopener noreferrer" class="project-btn"><span><i class="uil-btn uil uil-code-branch"></i></span></a>
+                </div>
+              </div>
+            </figure>
+            <figure class="project">
+              <div class="project-details">
+                <h3 class="project-title bold">Forkify | Recipe Application</h3>
+                <p class="project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore suscipit harum quod quibusdam itaque ab, culpa magnam non alias quisquam? At vero totam nemo vel deserunt illo a fuga deleniti?</p>
+                <div class="project-stack">
+                  <i class="uil uil-react"></i>
+                  <i class="uil uil-html5-alt"></i>
+                  <i class="uil uil-html3-alt"></i>
+                  <i class="uil uil-java-script"></i>
+                </div>
+                <div class="project-btns">
+                  <a href="" rel="noopener noreferrer" class="project-btn"><span><i class="uil-btn uil uil-eye"></i></span></a>
+                  <a href="" rel="noopener noreferrer" class="project-btn"><span><i class="uil-btn uil uil-code-branch"></i></span></a>
+                </div>
+              </div>
+              <img src="assets/project-image0.png" alt="Project Image" class="project-image">
+            </figure>
+            <figure class="project">
+              <img src="assets/project-image0.png" alt="Project Image" class="project-image">
+              <div class="project-details">
+                <h3 class="project-title bold">Forkify | Recipe Application</h3>
+                <p class="project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore suscipit harum quod quibusdam itaque ab, culpa magnam non alias quisquam? At vero totam nemo vel deserunt illo a fuga deleniti?</p>
+                <div class="project-stack">
+                  <i class="uil uil-react"></i>
+                  <i class="uil uil-html5-alt"></i>
+                  <i class="uil uil-html3-alt"></i>
+                  <i class="uil uil-java-script"></i>
+                </div>
+                <div class="project-btns">
+                  <a href="" rel="noopener noreferrer" class="project-btn"><span><i class="uil-btn uil uil-eye"></i></span></a>
+                  <a href="" rel="noopener noreferrer" class="project-btn"><span><i class="uil-btn uil uil-code-branch"></i></span></a>
+                </div>
+              </div>
+            </figure>
+            <figure class="project">
+              <div class="project-details">
+                <h3 class="project-title bold">Forkify | Recipe Application</h3>
+                <p class="project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore suscipit harum quod quibusdam itaque ab, culpa magnam non alias quisquam? At vero totam nemo vel deserunt illo a fuga deleniti?</p>
+                <div class="project-stack">
+                  <i class="uil uil-react"></i>
+                  <i class="uil uil-html5-alt"></i>
+                  <i class="uil uil-html3-alt"></i>
+                  <i class="uil uil-java-script"></i>
+                </div>
+                <div class="project-btns">
+                  <a href="" rel="noopener noreferrer" class="project-btn"><span><i class="uil-btn uil uil-eye"></i></span></a>
+                  <a href="" rel="noopener noreferrer" class="project-btn"><span><i class="uil-btn uil uil-code-branch"></i></span></a>
+                </div>
+              </div>
+              <img src="assets/project-image0.png" alt="Project Image" class="project-image">
+            </figure>
+          </div>
+        </section>
+        <section class="section-about" id="about"></section>
+      </main>
+      <footer>
+        <div class="footer__logo-div">
+          <div class="footer__logo">
+            <a href="#">
+              <img
+                src="assets/flux logo.png"
+                alt="logo"
+                class="footer__logo-img"
+              />
+            </a>
+          </div>
+        </div>
+        <ul class="footer__links">
+          <li class="footer__item">
+            <a
+              href="https://github.com/influxion/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer__link"
+              >Github</a
+            >
+          </li>
+          <li class="footer__item">
+            <a
+              href="https://www.linkedin.com/in/jordon-nichols/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer__link"
+              >Linkedin</a
+            >
+          </li>
+          <li class="footer__item">
+            <a
+              href="mailto:jordon@influxed.io"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer__link"
+              >Email</a
+            >
+          </li>
+        </ul>
+        <p class="copyright">
+          Copyright © <span class="year">1999</span> by INFLUXED, Inc. All
+          rights reserved.
+        </p>
+      </footer>
+      <div class="modal hidden">
+        <div class="modal__description">
+          <h1 class="modal__header">Get in touch</h1>
+          <p>
+            Although I’m not currently looking for any new opportunities, my
+            inbox is always open. Whether you have a question or just want to
+            say hi, I’ll try my best to get back to you!
+          </p>
+          <h3>Email</h3>
+          <p><a href="mailto:jordon@influxed.io">jordon@influxed.io</a></p>
+          <h3>Phone</h3>
+          <p><a href="tel:204-791-0981">+1 (204) 791-0981</a></p>
+          <h3>Socials</h3>
+          <ul class="modal__socials">
+            <li class="modal__item-social">
+              <a
+                class="modal__github"
+                href="https://github.com/influxion/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><span>
+                  <svg
+                    class="modal__svg-social"
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 16 16"
+                    style="fill: #000000"
+                  >
+                    <path
+                      d="M 7.5 1 C 3.910156 1 1 3.90625 1 7.488281 C 1 10.355469 2.863281 12.789063 5.445313 13.648438 C 5.769531 13.707031 6 13.375 6 13.125 C 6 12.972656 6.003906 12.789063 6 12.25 C 4.191986 12.698625 3.625 11.375 3.625 11.375 C 3.328125 10.625 2.96875 10.410156 2.96875 10.410156 C 2.378906 10.007813 3.011719 10.019531 3.011719 10.019531 C 3.669863 10.0625 4 10.625 4 10.625 C 4.5 11.5 5.628906 11.419863 6 11.25 C 6 10.851563 6.042969 10.5625 6.152344 10.378906 C 4.109375 10.019531 2.996094 8.839844 3 7.207031 C 3.003906 6.242188 3.335938 5.492188 3.875 4.9375 C 3.698625 4.698625 3.480469 3.625 3.960938 3 C 5.167969 3 5.886719 3.871094 5.886719 3.871094 C 5.886719 3.871094 6.453125 3.625 7.496094 3.625 C 8.542969 3.625 9.105469 3.859375 9.105469 3.859375 C 9.105469 3.859375 9.828125 3 11.035156 3 C 11.515625 3.625 11.355469 4.698625 11.167969 4.917969 C 11.683594 5.460938 12 6.210938 12 7.207031 C 12 8.839844 10.890625 10.019531 8.851563 10.375 C 8.980469 10.570313 9 10.84375 9 11.25 C 9 12.117188 9 12.910156 9 13.125 C 9 13.375 9.226563 13.710938 9.558594 13.648438 C 12.198625 12.785156 14 10.355469 14 7.488281 C 14 3.90625 11.089844 1 7.5 1 Z"
+                    ></path>
+                  </svg>
+                </span>
+              </a>
+            </li>
+            <li class="modal__item-social">
+              <a
+                class="modal__linkedin"
+                href="https://www.linkedin.com/in/jordon-nichols/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><span>
+                  <svg
+                    class="modal__svg-social"
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 16 16"
+                    style="fill: #000000"
+                  >
+                    <path
+                      d="M 2.757813 1 C 1.792969 1 1 1.792969 1 2.757813 L 1 12.246094 C 1 13.207031 1.792969 14 2.757813 14 L 12.246094 14 C 13.207031 14 14 13.207031 14 12.246094 L 14 2.757813 C 14 1.792969 13.207031 1 12.246094 1 Z M 2.757813 2 L 12.246094 2 C 12.667969 2 13 2.332031 13 2.757813 L 13 12.246094 C 13 12.667969 12.667969 13 12.246094 13 L 2.757813 13 C 2.332031 13 2 12.667969 2 12.246094 L 2 2.757813 C 2 2.332031 2.332031 2 2.757813 2 Z M 4 3 C 3.449219 3 3 3.449219 3 4 C 3 4.550781 3.449219 5 4 5 C 4.550781 5 5 4.550781 5 4 C 5 3.449219 4.550781 3 4 3 Z M 3 6 L 3 12 L 5 12 L 5 6 Z M 6 6 L 6 12 L 8 12 L 8 9.320313 C 8 8.488281 8.078125 7.742188 9.078125 7.742188 C 10.0625 7.742188 10 8.698719 10 9.375 L 10 12 L 12 12 L 12 9.039063 C 12 7.320313 11.698625 6 9.691986 6 C 8.753906 6 8.28125 6.375 8.023438 6.875 L 8 6.875 L 8 6 Z"
+                    ></path>
+                  </svg>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="modal__info">
+          <form class="modal__form">
+            <div class="input name">
+              <label>Name</label>
+              <input class="form-name" name="name" type="text" required />
+            </div>
+            <div class="input email">
+              <label>Email Address</label>
+              <input class="form-email"name="email" type="email" required />
+            </div>
+            <div class="input message">
+              <label>Message</label>
+              <textarea class="form-message" name="message" rows="6" required></textarea>
+            </div>
+            <button type="submit" class="btn form-btn">Send Message &rarr;</button>
+          </form>
+          <button class="btn--close-modal">&times;</button>
+        </div>
+      </div>
+      <div class="overlay hidden"></div>
+    </div>
+  </body>
+</html>

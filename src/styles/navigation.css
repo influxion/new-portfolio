@@ -1,0 +1,221 @@
+/*/ ================================================= */
+/*/ =======================NAV======================= */
+/*/ ================================================= */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  height: 80px;
+  padding: 0 48px;
+  font-weight: 500;
+  background-color: #d0ebff;
+  position: relative;
+}
+
+/* .full-nav.sticky {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.95);
+  transition: all 1s ease-in-out;
+  width: 100%;
+} */
+.navigation {
+  display: flex;
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+.nav__socials {
+  display: flex;
+  gap: 0.8rem;
+  padding: 2.4rem 3.2rem 2.4rem 0;
+}
+
+.nav__svg-social:hover,
+.nav__svg-social:focus {
+  filter: invert(28%) sepia(33%) saturate(2671%) hue-rotate(184deg)
+    brightness(102%) contrast(90%);
+  transition: all 0.2s ease-in-out;
+}
+
+.linkedin:after {
+  content: '';
+  background: #1864ab;
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.linkedin:hover::after {
+  width: 3.2rem;
+}
+
+.github:after {
+  content: '';
+  background: #1864ab;
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.github:hover::after {
+  width: 3.2rem;
+}
+
+.nav__logo {
+  height: 8rem;
+}
+
+.contact {
+  background-image: linear-gradient(140deg, #1864ab, #339af0);
+  padding: 1.2rem 2.4rem;
+  border-radius: 25px;
+  align-self: center;
+  margin: 0 3.2rem 0 3.2rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: all 0.5s ease-in-out;
+}
+.contact span {
+  color: #fff;
+}
+.contact:hover {
+  background-image: linear-gradient(120deg, #175fa3, #3296e7);
+  transform: scale(1.02);
+}
+
+.underline {
+  background-image: linear-gradient(to right, #1864ab, #1864ab 50%, #000 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.underline:before {
+  content: '';
+  background: #1864ab;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.underline:hover {
+  background-position: 0;
+}
+
+.underline:hover::before {
+  width: 100%;
+}
+
+/* STICKY NAVIGATION */
+.sticky .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.97);
+  z-index: 999;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.03);
+}
+
+.sticky .section-hero {
+  margin-top: 8rem;
+}
+
+@media (max-width: 1024px) {
+  .navigation {
+    display: none;
+  }
+
+  #side-menu-toggle {
+    display: block !important;
+  }
+}
+
+.mobile-nav {
+  width: 30rem;
+  height: 100vh;
+  max-width: 90%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: white;
+  z-index: 10;
+  padding: 2rem 1rem 1rem 2rem;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-out;
+}
+
+.mobile-nav.open {
+  transform: translateX(0);
+}
+
+.mobile-nav__item-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-nav__item {
+  margin: 1rem;
+  padding: 0;
+}
+
+/* .mobile-nav__item a,
+.mobile-nav__item button {
+  font: inherit;
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  padding: 0.5rem 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-nav__item a:active,
+.mobile-nav__item a:hover,
+.mobile-nav__item a.active,
+.mobile-nav__item button:hover,
+.mobile-nav__item button:active {
+  background: #00695c;
+  color: white;
+  border-radius: 3px;
+} */
+
+#side-menu-toggle {
+  align-self: center;
+  display: none;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+  display: none;
+}
